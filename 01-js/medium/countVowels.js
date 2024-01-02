@@ -7,6 +7,16 @@
 
 function countVowels(str) {
     // Your code here
+    var ans=0;
+    vowels=['a','e','i','o','u']
+    str=str.toLowerCase();
+    for(var i=0;i<str.length;i++)
+    {
+      if(vowels.indexOf(str[i])!=-1){
+        ans++;
+      }
+    }
+    return ans;
 }
 
 module.exports = countVowels;
